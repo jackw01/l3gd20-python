@@ -19,7 +19,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'l3gd20_test=l3gd20:test'
+            'l3gd20_test=l3gd20:_test'
         ]
     },
     license='MIT',

@@ -61,7 +61,7 @@ class L3GD20(object):
                                        [0b00001111])
 
         # Set range
-        self.set_range(ANGE_250DPS)
+        self.set_range(RANGE_250DPS)
 
     def set_range(self, new_range):
         'Set range'
@@ -85,7 +85,7 @@ class L3GD20(object):
             gyro_raw[2] * self._dps_per_lsb,
         )
 
-def test():
+def _test():
     i2c_channel = 1
     bus = smbus.SMBus(i2c_channel)
     device = L3GD20(bus)
